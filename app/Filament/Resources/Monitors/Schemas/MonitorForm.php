@@ -13,7 +13,7 @@ class MonitorForm
         return $schema
             ->components([
                 TextInput::make('url')
-                    ->label('Website')
+                    ->label('Website URL')
                     ->required()
                     ->columnSpanFull()
                     ->prefixIcon(Heroicon::OutlinedGlobeAlt)

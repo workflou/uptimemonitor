@@ -25,12 +25,12 @@ class MonitorPolicy
 
     public function update(User $user, Monitor $monitor): bool
     {
-        return false;
+        return $this->view($user, $monitor);
     }
 
     public function delete(User $user, Monitor $monitor): bool
     {
-        return false;
+        return $this->view($user, $monitor);;
     }
 
     public function restore(User $user, Monitor $monitor): bool
